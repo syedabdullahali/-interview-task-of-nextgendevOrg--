@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+
+
+
+@media(min-width:800px){
+    #blackcontainer{
+        height: 600px;
+        width: 1000px;
+        
+        display: grid;
+        place-items: center;
+
+        background-color: black;
+        border: 50px solid white;
+
+    }
+#container{
+    height: 400px;
+    width: 800px;
+    background-color: black;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.div{
+    height: 200px;
+    width: 200px;
+
+    background-color:black;
+    border: 1px solid white;
+
+}
+
+
+.div1{
+    height: 200px;
+    width: 200px;
+
+    background-color:red;
+    border:1px solid white;
+   
+
+
+}
+
+.div1:nth-child(2){
+    height: 200px;
+    width: 200px;
+
+    background-color:rgb(15, 15, 15);
+    border:1px solid white;
+}
+.div1:nth-child(4){
+    height: 200px;
+    width: 200px;
+
+    background-color:rgb(15, 15, 15);
+    border:1px solid white;
+}
+
+.div:nth-child(6){
+    height: 200px;
+    width: 200px;
+    
+    background-color:rgb(240, 18, 18);
+    border:1px solid white;
+}
+.div:nth-child(8){
+    height: 200px;
+    width: 200px;
+
+    background-color:rgb(245, 11, 11);
+    border:1px solid white;
+}
+
+/* animation*/
+
+.div:nth-child(5),
+.div1:nth-child(1){
+
+    position: relative;
+
+    animation-name: box;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+}
+
+@keyframes box{
+
+0%{
+  top:0%;
+}
+50%{
+  top:20%;
+}
+100%{
+   top:0%;
+}
+
+}
+
+.div:nth-child(6),
+.div1:nth-child(2){
+
+    position: relative;
+
+    animation-name: box1;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+}
+
+@keyframes box1{
+
+0%{
+  top:0%;
+}
+50%{
+  top:-20%;
+}
+100%{
+   top:0%;
+}
+}
+.div:nth-child(7),
+.div1:nth-child(3){
+
+    position: relative;
+
+    animation-name: box2;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+}
+
+@keyframes box2{
+
+0%{
+  top:0%;
+}
+50%{
+  top:20%;
+}
+100%{
+   top:0%;
+}
+
+}
+
+
+.div:nth-child(8),
+.div1:nth-child(4){
+
+    position: relative;
+
+    animation-name: box3;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+}
+
+@keyframes box3{
+
+0%{
+  top:0%;
+}
+50%{
+  top:-20%;
+}
+100%{
+   top:0%;
+}
+
+}
+
+}
+
+
+
+@media(max-width:800px){
+    #blackcontainer{
+        height: 1000px;
+        width: 600px;
+
+        display: grid;
+        place-items: center;
+
+        background-color: black;
+        border: 50px solid white;
+    }
+    #container{
+        height: 800px;
+        width: 400px;
+
+        background-color: rgb(246, 248, 248);
+
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .div{
+        height: 200px;
+        width: 200px;
+
+        background-color:black;
+        border: 1px solid white;
+    
+    }
+    
+    
+    .div1{
+        height: 200px;
+        width: 200px;
+
+        background-color:red;
+        border:1px solid white;
+       
+    
+    
+    }
+    
+    .div1:nth-child(2){
+        height: 200px;
+        width: 200px;
+
+        background-color:black;
+        border:1px solid white;
+    }
+    .div1:nth-child(4){
+        height: 200px;
+        width: 200px;
+
+        background-color:black;
+        border:1px solid white;
+    }
+    
+    .div:nth-child(5){
+        height: 200px;
+        width: 200px;
+
+        background-color:red;
+        border:1px solid white;
+    }
+    .div:nth-child(7){
+        height: 200px;
+        width: 200px;
+
+        background-color:red;
+        border:1px solid white;
+    }    
+}
