@@ -8,6 +8,8 @@ body{
     display: grid;
     place-items: center;
     height: 100vh;
+     
+    background-color: black;
 }
 
 
@@ -17,7 +19,7 @@ body{
     #blackcontainer{
         height: 600px;
         width: 1000px;
-        
+
         display: grid;
         place-items: center;
 
